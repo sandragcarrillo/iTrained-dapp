@@ -3,7 +3,6 @@ import {
   Container,
   Stack,
   Text,
-  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
 
@@ -28,17 +27,7 @@ const Footer = () => {
           align={{ base: "center", md: "center" }}
         >
           <Text>
-            © {new Date().getFullYear()} Ethereal dapp es un proyecto de
-            <Link ml={1} href="https://github.com/sandragcarrillo">
-              Sandra Carrillo, 
-            </Link>
-            <Link ml={1} href="https://github.com/carlaupgrade">
-              Carla Martinez y
-            </Link>
-            <Link ml={1} href=" https://github.com/vickiavola">
-              Vicki Avola
-            </Link>
-          </Text>
+            © {new Date().getFullYear()} iTrained, a project to solve a social problem         </Text>
         </Container>
       </Box>
     </Box>

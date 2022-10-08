@@ -13,6 +13,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NavLink from "./nav-link";
 import Footer from "./footer";
 import WalletData from "./wallet-data";
+// import { useWeb3React } from "@web3-react/core";
 
 const Links = [
   {
@@ -20,13 +21,14 @@ const Links = [
     to: "/",
   },
   {
-    name: "Galería",
+    name: "Projects",
     to: "/gallery",
   },
 ];
 
 const MainLayout = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { active } = useWeb3React();
 
   return (
     <Flex minH="100vh" direction="column" >
@@ -37,7 +39,7 @@ const MainLayout = ({ children }) => {
         px={4}
       >
         <Flex
-          color={useColorModeValue("gray.600", "white")}
+          color={useColorModeValue("gray.700", "white")}
           minH={"70px"}
           py={{ base: 2 }}
           px={{ base: 4 }}
@@ -58,7 +60,7 @@ const MainLayout = ({ children }) => {
             <Flex alignItems="center">
             <Image
                     alt="logo"
-                    src="https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/Logo-iTrained.png?raw=true" //cambiar url
+                    src="https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/logo.png?raw=true" //cambiar url
                     width="200px"
                     objectFit="cover"
                     ></Image>
@@ -66,6 +68,7 @@ const MainLayout = ({ children }) => {
 
             
           </HStack>
+
           <HStack
               as={"nav"}
               spacing={4}
@@ -82,13 +85,15 @@ const MainLayout = ({ children }) => {
 
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
+              <Stack as={"nav"} spacing={4}>
               {Links.map(({ name, to }) => (
                 <NavLink key={name} to={to}>
                   {name}
                 </NavLink>
               ))}
             </Stack>
+
+          
           </Box>
         ) : null}
       </Box>
