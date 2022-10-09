@@ -1,21 +1,48 @@
-import{Stack,Flex,Heading,Text, Box }from "@chakra-ui/react";
-//import{Link}from "react-router-dom";
+import{Stack,Flex,Heading,Text, Box,SimpleGrid, Button, }from "@chakra-ui/react";
+import { useWeb3React } from "@web3-react/core";
+import {VscEmptyWindow, VscCheck } from "react-icons/vsc"
+import { Link } from "react-router-dom";
+
 
 const Home=()=>{
+  const { active } = useWeb3React();
   
-  return(
+ if (active) return (
+   <Stack>
+     <Heading align={"center"} color={"#495C83"} marginTop="10">Welcome to iTrained!</Heading>
+     <Text align={"center"} paddingBottom="50" >
+       NFTs as Proof of Knowledge </Text>
+     
 
-  <Box background='url(https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/background.png?raw=true)'width={"full"} >
+     <SimpleGrid columns={2} spacing={10}>
+     <Link to ="projects"><Button leftIcon={<VscEmptyWindow />} size="lg" height="200px" width={"100%"} bg='#495C83' color={"white"} border="1px"
+      _hover={{bg:"white", color:"#495C83", borderColor:"#495C83",}}>Upload a project, get 3 validations <br></br> to obtain your NFT for your ability</Button></Link>
+
+      <Link to ="projects"><Button leftIcon={<VscCheck />} size="lg" height="200px" width={"100%"} bg='#495C83' color={"white"} border="1px"
+      _hover={{bg:"white", color:"#495C83", borderColor:"#495C83",}}>Validate others abilities to help <br></br>them get their NFT (web2 validation,
+      <br></br>  don't worry on fees!) </Button></Link>
 
 
-   <Flex
-  align={"center"}
-  width={"50%"}
-  spacing={{base:8,md:10}}
-  py={{base:20,md:28}}
-  direction={{base:"column-reverse",md:"row"}}><Stack flex={1}spacing={{base:5,md:10}}><Heading
+    </SimpleGrid>
+  
+   </Stack>
+   
+
+ )
+  
+  else return(
+
+  <Box >
+
+
+   
+    <Stack flex={1}spacing={{base:5,md:10}} background='url(https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/background.png?raw=true)'
+        width="100%" height={"500px"} position={"relative"} borderRadius={"10"} margin={"0"}>
+  <Heading
+  width={"40%"}
   lineHeight={1.1}
-  fontWeight={600}
+  margin="10"
+  fontWeight={700}
   fontSize={{base:"3xl",sm:"4xl",lg:"6xl"}}><Text color="white"
   as={"span"}
   position={"relative"}
@@ -26,10 +53,10 @@ const Home=()=>{
   </Stack>
 
 
-  </Flex>
 
-  <Box bg={"#495C83"}  
-        width={"100%" }borderRadius={"10"}>
+
+  <Box   bg={"#495C83"}
+        width={"100%" }borderRadius={"10"} marginTop="0">
           <Heading color={"white"} fontSize="5xl" align={"center"} padding="15">
         How does it work?
         </Heading>
@@ -56,14 +83,6 @@ const Home=()=>{
    
 
 </Box>
-
-
-
-
-
- 
-   
-
 
 
   

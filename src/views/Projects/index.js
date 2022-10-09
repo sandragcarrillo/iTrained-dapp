@@ -1,7 +1,5 @@
 import { useWeb3React } from "@web3-react/core";
-import { SimpleGrid, Button, Heading, Center, Box, Image, Flex, Spacer, Text, Stack} from '@chakra-ui/react'
-import { Link } from "react-router-dom";
-// import Loading from "../../components/loading";
+import { SimpleGrid, Button, Heading, Center, Box, Image, Flex, Text, Stack} from '@chakra-ui/react'
 import RequestAccess from "../../components/request-access";
 
 
@@ -12,7 +10,7 @@ const Projects = () => {
 
   return (
     <Stack>
-    <Center padding={6} color={"#495C83"} ><Heading>Explore projects to endorse other abilities</Heading></Center>
+    <Center padding={6} color={"#495C83"} ><Heading>Explore projects to validate others abilities</Heading></Center>
     <SimpleGrid columns={1} spacing={10}>
    <Center>
    <Image src="https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/projectanon.png?raw=true" width={"130px"} mr={"10"}></Image>
@@ -22,9 +20,10 @@ const Projects = () => {
       <Text marginTop="10px">
       Project uploaded to prove React abilities
       </Text>
-      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}}>
+      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
         <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
-      <a href=""><Button color={"white"} bg="#495C83">Endorse this ability</Button></a>
+      <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
+      <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
     </Box>
     </Flex>
@@ -37,9 +36,10 @@ const Projects = () => {
       <Text marginTop="10px">
       Project uploaded to prove React abilities
       </Text>
-      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}}>
+      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
         <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
-      <a href=""><Button color={"white"} bg="#495C83">Endorse this ability</Button></a>
+      <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
+      <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
     </Box>
 
@@ -54,9 +54,10 @@ const Projects = () => {
       <Text marginTop="10px">
       Project uploaded to prove React abilities
       </Text>
-      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}}>
+      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
         <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
-      <a href=""><Button color={"white"} bg="#495C83">Endorse this ability</Button></a>
+      <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
+      <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
     </Box>
     
@@ -72,9 +73,10 @@ const Projects = () => {
       <Text marginTop="10px">
       Project uploaded to prove React abilities
       </Text>
-      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}}>
+      <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
         <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
-      <a href=""><Button color={"white"} bg="#495C83">Endorse this ability</Button></a>
+      <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
+      <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
     </Box>
 
