@@ -22,7 +22,11 @@ const Links = [
   },
   {
     name: "Projects",
-    to: "/gallery",
+    to: "/projects",
+  },
+  {
+    name: "Abilities",
+    to: "/abilities",
   },
 ];
 

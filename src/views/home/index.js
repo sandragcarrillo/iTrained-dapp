@@ -15,7 +15,7 @@ const Home=()=>{
      
 
      <SimpleGrid columns={2} spacing={10}>
-     <Link to ="projects"><Button leftIcon={<VscEmptyWindow />} size="lg" height="200px" width={"100%"} bg='#495C83' color={"white"} border="1px"
+     <Link to ="abilities"><Button leftIcon={<VscEmptyWindow />} size="lg" height="200px" width={"100%"} bg='#495C83' color={"white"} border="1px"
       _hover={{bg:"white", color:"#495C83", borderColor:"#495C83",}}>Upload a project, get 3 validations <br></br> to obtain your NFT for your ability</Button></Link>
 
       <Link to ="projects"><Button leftIcon={<VscCheck />} size="lg" height="200px" width={"100%"} bg='#495C83' color={"white"} border="1px"
