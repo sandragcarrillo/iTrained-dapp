@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <Stack>
-    <Center padding={6} color={"#495C83"} ><Heading>Explore projects to validate others abilities</Heading></Center>
+    <Center padding={6} color={"#495C83"} ><Heading>Explore projects to validate other abilities</Heading></Center>
     <SimpleGrid columns={1} spacing={10}>
    <Center>
    <Image src="https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/projectanon.png?raw=true" width={"130px"} mr={"10"}></Image>
@@ -21,7 +21,7 @@ const Projects = () => {
       Project uploaded to prove React abilities
       </Text>
       <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
-        <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
+        <a href="https://ethereal-interface.vercel.app/#/"><Button >Explore the project</Button></a>
       <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
       <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
@@ -32,13 +32,13 @@ const Projects = () => {
    <Image src="https://github.com/sandragcarrillo/iTrained-dapp/blob/main/src/projectanon.png?raw=true" width={"130px"} mr={"10"}></Image>
     <Flex  w='50%' h='auto' border={"solid 1px #495C83"} borderRadius={"10px"} marginTop="10px" padding={"5"} direction={{base:"column",md:"row"}}>
     <Box>
-      <Heading color={"#495C83"}>Web app for audiobooks</Heading>
+      <Heading color={"#495C83"}>DNFT contract </Heading>
       <Text marginTop="10px">
-      Project uploaded to prove React abilities
+      Project uploaded to prove Solidity abilities
       </Text>
       <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
-        <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
-      <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
+        <a href="https://ethereal-interface.vercel.app/#/"><Button >Explore the project</Button></a>
+      <Button color={"white"} bg="green">You already validated it</Button>
       <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
     </Box>
@@ -55,7 +55,7 @@ const Projects = () => {
       Project uploaded to prove React abilities
       </Text>
       <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
-        <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
+        <a href=""><Button >Explore the project</Button></a>
       <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
       <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
@@ -74,7 +74,7 @@ const Projects = () => {
       Project uploaded to prove React abilities
       </Text>
       <Flex gap={"6"} marginTop="10px" direction={{base:"column",md:"row"}} justifyContent={"space-between"}>
-        <a href="https://github.com/sandragcarrillo/ethereal-interface#:~:text=Despliegue-,Ethereal%20dapp,-%F0%9F%92%A1"><Button >Explore the project</Button></a>
+        <a href="https://ethereal-interface.vercel.app/#/"><Button >Explore the project</Button></a>
       <a href=""><Button color={"white"} bg="#495C83">Validate this ability</Button></a>
       <a href=""><Button color={"#495C83"} bg="#FBCB0A">Offer a job</Button></a>
       </Flex>
